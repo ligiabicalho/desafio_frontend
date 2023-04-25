@@ -8,9 +8,8 @@ describe('TktModuleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TktModuleComponent ]
-    })
-    .compileComponents();
+      declarations: [TktModuleComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TktModuleComponent);
     component = fixture.componentInstance;

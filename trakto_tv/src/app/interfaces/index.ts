@@ -5,3 +5,9 @@ export interface UserLogin {
 export interface DataResponse {
   access_token?: string;
 }
+export interface ModulesEdu {
+  name: string;
+  bar: string;
+  rota: string;
+  image: string;
+}
