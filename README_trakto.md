@@ -1,6 +1,6 @@
 # Desafio Front-end Developer
 
-> [Instrução origianl](https://github.com/trakto/desafio_frontend)
+> [Instrução original](https://github.com/trakto/desafio_frontend)
 
 ## Objetivo
 
