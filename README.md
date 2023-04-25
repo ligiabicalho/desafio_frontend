@@ -43,7 +43,7 @@ Desenvolver uma aplicação front-end utilizando o framework Angular 2+, consumi
 ## Como usar
 
 Usuário experimental:
-```json
+```
 { 
   email: acervolcb@gmail.com
   password: Tkt123
