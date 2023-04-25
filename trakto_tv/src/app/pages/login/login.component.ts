@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { UserLogin } from 'src/app/interfaces/interfaces';
+import { Router } from '@angular/router';
+import { UserLogin } from 'src/app/interfaces';
+import { RequestApiService } from './../../shared/services/resquet-api.service';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +13,14 @@ export class LoginComponent {
     email: '',
     password: '',
   };
+  isLoading = false;
 
+  constructor(private router: Router, private service: RequestApiService) {}
   onSubmit() {
-    console.log('Clicou!');
+    this.isLoading = !this.isLoading;
+    this.service.login(this.user).subscribe((data) => {
+      this.service.setToken(data);
+      this.router.navigate(['/home']);
+    });
   }
 }

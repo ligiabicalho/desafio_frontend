@@ -35,7 +35,11 @@
         </label>
       </div>
       <button class="login__button" type="submit" [disabled]="!form.valid">
-        Entrar
+        <span *ngIf="!isLoading">Entrar</span>
+        <div class="login__button_loading" *ngIf="isLoading">
+          <div class="loader"></div>
+          <span>Entrando...</span>
+        </div>
       </button>
     </form>
   </div>
