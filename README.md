@@ -2,12 +2,13 @@
 
 ## Objetivo
 
-Desenvolver uma aplicação front-end utilizando o framework Angular 2+, consumindo a API da Trakto, para realizar a história apresentada.
+Desenvolver uma aplicação front-end utilizando o framework Angular 2+, consumindo a API da Trakto, para realizar a [história apresentada](https://github.com/trakto/desafio_frontend).
 
 ## Funcionalidades
 
 - Tela de Login: 
   - validação de email e senha.
+  - autenticação do usuário
 - Tela inicial, apresenta os módulos da Trakto Tv:
   - Material didático; 
   - Quiz;
@@ -41,15 +42,23 @@ Desenvolver uma aplicação front-end utilizando o framework Angular 2+, consumi
 
 ## Como usar
 
+Usuário experimental:
+```json
+{ 
+  email: acervolcb@gmail.com
+  password: Tkt123
+}
+```
+
 ## Decisões tomadas e suas motivações
 
 - Tela de login:
 > observando a página de cadastro/login da Trakto, optei pelas validações:
   - e-mail válido: user@mail.com
-    ** Bug na validação no site: o botão habilita com email@ **
+    ** Bug na validação no site: o botão habilita com user@ , sem servidor **
   - senha: mínimo de 6 caracteres
   - Botão Entrar só habilita com validação dos inputs.
   - Loading: 'Entrando...' no botão.
-
+> Utilização do Bootstrap para estilizar mensagens de erro.
 
 
