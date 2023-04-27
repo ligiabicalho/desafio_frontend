@@ -1,0 +1,8 @@
+<a href="https://editor.trakto.io/presentation/p/{{ doc.id }}" target="_blank">
+  <div class="doc_thumb">
+    <span class="doc_pages">{{ doc.pages?.length }} 5 slides</span>
+    <!-- doc.pages nao aparece no meu usuário -->
+    <img [src]="doc.thumbs.low" [alt]="doc.title" />
+    <p class="doc_title">{{ doc.title }}</p>
+  </div>
+</a>

@@ -1,1 +1,10 @@
-<div class="course_page"></div>
+<div class="course_page">
+  <app-header [themeDark]="false"></app-header>
+  <div class="course_content">
+    <app-banner></app-banner>
+    <app-grid-items
+      *ngFor="let theme of gridThemes"
+      [theme]="theme"
+    ></app-grid-items>
+  </div>
+</div>

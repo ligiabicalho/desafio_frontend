@@ -1,0 +1,45 @@
+<section class="course_grid_row">
+  <div>
+    <div class="course_grid_row_left">
+      <div class="grid_header">
+        <p class="period">Semana 24/04 até 29/04</p>
+        <img
+          src="../../../../assets/images/course/arrow-left.svg"
+          alt="arrow left"
+        />
+        <img
+          src="../../../../assets/images/course/arrow-right.png"
+          alt="arrow right"
+        />
+      </div>
+      <hgroup class="grid_title">
+        <h3>{{ theme.title }}</h3>
+        <p>{{ theme.description }}</p>
+      </hgroup>
+    </div>
+    <button
+      class="course_button course_grid_row_right"
+      [ngClass]="theme.viewMore.color"
+      (click)="reDirect()"
+    >
+      <img
+        *ngIf="theme.viewMore.color === 'red'"
+        src="../../../../assets/images/course/icon-video.png"
+      />
+      {{ theme.viewMore.text }}
+    </button>
+  </div>
+  <div class="grid_items">
+    <app-item-render
+      *ngFor="let doc of theme.docs"
+      id="{{ doc.id }}"
+      [doc]="doc"
+    >
+    </app-item-render>
+    <img
+      class="grid_videos"
+      *ngIf="theme.videos"
+      src="../../../../../assets/images/course/videos.png"
+    />
+  </div>
+</section>
