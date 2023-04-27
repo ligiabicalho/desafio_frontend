@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserLogin } from 'src/app/interfaces';
-import { RequestApiService } from './../../shared/services/resquet-api.service';
+import { RequestApiService } from '../../shared/services/request-api.service';
 
 @Component({
   selector: 'app-login',
