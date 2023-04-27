@@ -1,21 +1,48 @@
-<header class="header__traktoedu">
-  <div class="header_left">
-    <img src="../../../assets/images/logo-edu-white.svg" alt="Logo TraktoEdu" />
+<header
+  class="header__traktoedu"
+  [ngSwitch]="themeDark"
+  [ngStyle]="{
+      'backgroundColor': (themeDark ? '#252323' : 'white'),
+      'color': (themeDark ? '#e4ebfb' : '#7183a6'),
+    }"
+>
+  <div class="header_left" *ngSwitchCase="true">
+    <img src="../../../assets/images/dark/logo-edu.svg" alt="Logo TraktoEdu" />
   </div>
-  <div class="header_right">
-    <div class="img_group">
-      <img src="../../../assets/images/icon-calendar.png" alt="iconcalendar" />
-      <p>27/04/2024</p>
-    </div>
-    <img src="../../../assets/images/line.png" alt="line" />
+  <div class="header_left" *ngSwitchCase="false">
     <img
-      src="../../../assets/images/icon-notification.png"
+      src="../../../assets/images/light/logo-edu-light.svg"
+      alt="Logo TraktoEdu"
+    />
+    <button
+      class="course_button header_button_logout"
+      type="button"
+      routerLink="/home"
+    >
+      <img src="../../../assets/images/light/logout.png" alt="icon logout" />
+      <span class="button_text">Trocar de ambiente</span>
+    </button>
+  </div>
+  <div class="header_right" *ngSwitchCase="true">
+    <div class="img_group">
+      <img
+        src="../../../assets/images/dark/icon-calendar.png"
+        alt="iconcalendar"
+      />
+      <span>{{ transformDate() }}</span>
+    </div>
+    <img src="../../../assets/images/dark/line.png" alt="line" />
+    <img
+      src="../../../assets/images/dark/icon-notification.png"
       alt="icon-notification"
     />
-    <img src="../../../assets/images/line.png" alt="line" />
+    <img src="../../../assets/images/dark/line.png" alt="line" />
     <div class="img_group">
-      <img src="../../../assets/images/avatar.png" alt="avatar user" />
-      <img src="../../../assets/images/icon-arrow.png" alt="icon arrow" />
+      <img src="../../../assets/images/dark/avatar.png" alt="avatar user" />
+      <img src="../../../assets/images/dark/icon-arrow.png" alt="icon arrow" />
     </div>
+  </div>
+  <div class="header_right" *ngSwitchCase="false">
+    <img src="../../../assets/images/light/right.png" alt="nav-bar-right" />
   </div>
 </header>

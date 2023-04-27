@@ -1,21 +1,43 @@
 .header__traktoedu {
   align-items: center;
-  background-color: #252323;
-  color: #e4ebfb;
+  background: white;
   display: flex;
   flex-direction: row;
-  font-family: Roboto , sans-serif;
-  height: 75px;
+  height: 76px;
   justify-content: space-between;
-  width: 100vw;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
 }
 
 .header_left {
   display: flex;
   flex-direction: row;
-  height: 56px;
-  margin: 14px 65px 0;
+  margin-left: calc(50% - 142.84px/2 - 823.58px);
 
+}
+
+.header_button_logout {
+  border: 1px solid #7183a6;
+  color: #7183a6;
+  font-size: 20px;
+  gap: 8px;
+  left: 264px;
+  line-height: 23px;
+  position: absolute;
+  text-decoration: none;
+  top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+.header_button_logout img {
+  height: 24px;
+  width: 24px;
 }
 
 .header_right {
@@ -36,3 +58,4 @@
   justify-content: center;
   margin: 4px;
 }
+
