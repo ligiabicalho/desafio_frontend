@@ -27,4 +27,13 @@ export class RequestApiService {
       httpOptions
     );
   }
+  getAll() {
+    const token = this.getToken();
+    const httpOptions = {
+      headers: new HttpHeaders({
+        Authorization: `Bearer ${token}`,
+      }),
+    };
+    return this.http.get<Documents>(`${this.API}/document`, httpOptions);
+  }
 }
