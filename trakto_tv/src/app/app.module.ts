@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { CourseModule } from './pages/course/course.module';
 import { HomeModule } from './pages/home/home.module';
 import { LoginModule } from './pages/login/login.module';
 
@@ -16,6 +17,7 @@ import { LoginModule } from './pages/login/login.module';
     FormsModule,
     LoginModule,
     HomeModule,
+    CourseModule,
     HttpClientModule,
   ],
   providers: [],

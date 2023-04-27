@@ -1,7 +1,9 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*"
+    "projects/**/*",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts"
   ],
   "overrides": [
     {
@@ -40,12 +42,11 @@
       ],
       "parser": "@angular-eslint/template-parser",
       "extends": [
+        "eslint:recommended",
         "plugin:@angular-eslint/template/recommended",
         "plugin:prettier/recommended"
       ],
-      "rules": {
-        "prettier/prettier": ["error", { "parser": "angular" }]
-      }
+      "rules": {}
     }
   ]
 }
