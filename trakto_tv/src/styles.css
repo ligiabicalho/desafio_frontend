@@ -5,8 +5,20 @@
 
 body {
   background: #eff2f9;
-  display: flex;
-  height: 100%;
+  font-family: Roboto , sans-serif;
   margin: auto;
-  width: 100%;
+}
+
+.course_button {
+  align-items: center;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto , sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
+  padding: 16px 24px;
 }
