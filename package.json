@@ -1,6 +1,7 @@
 {
   "name": "trakto-tv",
   "version": "0.0.0",
+  "homepage": "https://ligiabicalho.github.io/desafio_frontend",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
