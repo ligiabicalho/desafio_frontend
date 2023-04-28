@@ -23,9 +23,9 @@
 
   --md-blue: #4173cd;
 
-  --bg-neutral-white: white;
-
   --bg-light-blue: #eff2f9;
+
+  --neutral-white: white;
 
   --md-blue-light: #80abf9;
 
@@ -64,9 +64,11 @@
 }
 
 body {
-  background: #eff2f9;
+  background: var(--bg-light-blue);
   font-family: Roboto , sans-serif;
-  margin: auto;
+  height: 1080px;
+  position: relative;
+  width: 1920px;
 }
 
 .course_button {
