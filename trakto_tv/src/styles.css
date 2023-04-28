@@ -1,4 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+
+  --bg-dark: #1d1b1b;
+
+  --bg-green: #047534;
+
+  --hbg-dark: #252323;
+
+  --brand-green: #1dc763;
+
+  --brand-trakto-light: #66bfff;
+
+  --brand-trakto: #0095ff;
+
+  --brand-trakto-app: #4743ff;
+
+  --brand-orange: #fe6e46;
+
+  --brand-yellow-light: yellow-light;
+
+  --brand-yellow: yellow;
+
+  --md-blue: #4173cd;
+
+  --bg-neutral-white: white;
+
+  --bg-light-blue: #eff2f9;
+
+  --md-blue-light: #80abf9;
+
+  --neutral-light: #e4ebfb;
+
+  --neutral-clear: #d0daef;
+
+  --neutral-cloudy: #7183a6;
+
+  --neutral-dark: #354564;
+
+  --neutral-darknest: #04183e;
+
+  --qz-green-light: #91dea2;
+
+  --yt-grey-dark: #464141;
+
+  --yt-rose: #ff6868;
+
+  --ytb-red: #ff0100;
+
+  --yt-red: red;
+
+  --yt-red-light: #f22;
+
+  --yt-rose-light1: #ffbfbf;
+
+  --yt-rose-light2: #f4aeff;
+
+  --yt-rose-light3: #f6b5ff;
+
+}
+
 * {
   box-sizing: border-box;
 }
