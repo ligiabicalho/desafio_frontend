@@ -8,7 +8,7 @@ import { icons } from 'src/app/shared/header/icons';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  @Input() themeDark = true;
+  @Input() mode = 'dark';
   icons = icons;
 
   transformDate() {

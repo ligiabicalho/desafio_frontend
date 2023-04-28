@@ -1,15 +1,8 @@
-<header
-  class="header__bar"
-  [ngSwitch]="themeDark"
-  [ngStyle]="{
-      'backgroundColor': (themeDark ? '#252323' : 'white'),
-      'color': (themeDark ? '#e4ebfb' : '#7183a6'),
-    }"
->
-  <div class="header_left" *ngSwitchCase="true">
+<header class="header__content" [ngSwitch]="mode" [ngClass]="mode">
+  <div class="header_left" *ngSwitchCase="'dark'">
     <img [src]="icons.logo.dark" alt="Logo TraktoEdu" />
   </div>
-  <div class="header_left" *ngSwitchCase="false">
+  <div class="header_left" *ngSwitchCase="'light'">
     <img [src]="icons.logo.light" alt="Logo TraktoEdu" />
     <button
       class="course_button header_button_logout"
@@ -20,7 +13,7 @@
       <span class="button_text">Trocar de ambiente</span>
     </button>
   </div>
-  <div class="header_right" *ngSwitchCase="true">
+  <div class="header_right" *ngSwitchCase="'dark'">
     <div class="img_group">
       <img [src]="icons.calendar" alt="icon calendar" />
       <span>{{ transformDate() }}</span>
@@ -33,7 +26,7 @@
       <img [src]="icons.arrow" alt="icon arrow" />
     </div>
   </div>
-  <div class="header_right" *ngSwitchCase="false">
+  <div class="header_right" *ngSwitchCase="'light'">
     <img [src]="icons.group" alt="nav-bar-right" />
   </div>
 </header>
