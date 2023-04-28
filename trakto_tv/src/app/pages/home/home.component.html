@@ -1,0 +1,11 @@
+<div class="homepage">
+  <app-header>Header Component</app-header>
+  <main class="home__content">
+    <div class="home__modules">
+      <app-tkt-module
+        *ngFor="let module of modulesEdu"
+        [module]="module"
+      ></app-tkt-module>
+    </div>
+  </main>
+</div>

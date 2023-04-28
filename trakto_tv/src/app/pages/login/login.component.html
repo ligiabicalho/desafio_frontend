@@ -1,0 +1,46 @@
+<div class="login__content">
+  <div class="login__form">
+    <div class="login__logo">
+      <img src="../../../assets/images/logo-tkt.svg" alt="logo-tkt" />
+    </div>
+    <h1 class="login__title">Olá, faça login em sua conta.</h1>
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+      <div class="login__fields">
+        <label for="email" class="login__label">
+          E-mail
+          <input
+            class="login__input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Endereço de e-mail"
+            [(ngModel)]="user.email"
+            email
+            required
+          />
+        </label>
+        <br />
+        <label for="password" class="login__label">
+          Senha
+          <input
+            class="login__input"
+            id="password"
+            name="password"
+            type="password"
+            minlength="6"
+            placeholder="••••••••••"
+            [(ngModel)]="user.password"
+            required
+          />
+        </label>
+      </div>
+      <button class="login__button" type="submit" [disabled]="!form.valid">
+        <span *ngIf="!isLoading">Entrar</span>
+        <div class="login__button_loading" *ngIf="isLoading">
+          <div class="loader"></div>
+          <span>Entrando...</span>
+        </div>
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<header
+  class="header__bar"
+  [ngSwitch]="themeDark"
+  [ngStyle]="{
+      'backgroundColor': (themeDark ? '#252323' : 'white'),
+      'color': (themeDark ? '#e4ebfb' : '#7183a6'),
+    }"
+>
+  <div class="header_left" *ngSwitchCase="true">
+    <img [src]="icons.logo.dark" alt="Logo TraktoEdu" />
+  </div>
+  <div class="header_left" *ngSwitchCase="false">
+    <img [src]="icons.logo.light" alt="Logo TraktoEdu" />
+    <button
+      class="course_button header_button_logout"
+      type="button"
+      routerLink="/home"
+    >
+      <img [src]="icons.logout" alt="icon logout" />
+      <span class="button_text">Trocar de ambiente</span>
+    </button>
+  </div>
+  <div class="header_right" *ngSwitchCase="true">
+    <div class="img_group">
+      <img [src]="icons.calendar" alt="icon calendar" />
+      <span>{{ transformDate() }}</span>
+    </div>
+    <img [src]="icons.line" alt="line" />
+    <img [src]="icons.bell" alt="icon-notification" />
+    <img [src]="icons.line" alt="line" />
+    <div class="img_group">
+      <img [src]="icons.avatar" alt="avatar user" />
+      <img [src]="icons.arrow" alt="icon arrow" />
+    </div>
+  </div>
+  <div class="header_right" *ngSwitchCase="false">
+    <img [src]="icons.group" alt="nav-bar-right" />
+  </div>
+</header>

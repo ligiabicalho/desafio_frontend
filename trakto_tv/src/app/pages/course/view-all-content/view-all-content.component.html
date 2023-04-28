@@ -1,0 +1,16 @@
+<div class="course_page">
+  <app-header [themeDark]="false"></app-header>
+  <div class="course_grid_row">
+    <hgroup class="grid_title">
+      <h3>Material didático</h3>
+      <p>Acesse suas últimas apresentações de aula.</p>
+    </hgroup>
+    <div class="grid_items">
+      <app-item-render
+        *ngFor="let doc of allDocs"
+        id="{{ doc.id }}"
+        [doc]="doc"
+      ></app-item-render>
+    </div>
+  </div>
+</div>

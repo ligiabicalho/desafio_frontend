@@ -1,0 +1,22 @@
+.app-header {
+  position: fixed;
+}
+
+.course_page {
+  background: #eff2f9; /* Light Blue */
+  height: 2442px;
+  position: relative;
+  width: 1920px;
+}
+
+.course_content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-left: 64px;
+  margin-top: 108px;
+  padding: 0;
+  position: absolute;
+}
+
