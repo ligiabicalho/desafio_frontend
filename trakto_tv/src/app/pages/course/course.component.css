@@ -1,3 +1,7 @@
+.app-header {
+  position: fixed;
+}
+
 .course_page {
   background: #eff2f9; /* Light Blue */
   height: 2442px;

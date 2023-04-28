@@ -1,5 +1,5 @@
 <header
-  class="header__traktoedu"
+  class="header__bar"
   [ngSwitch]="themeDark"
   [ngStyle]="{
       'backgroundColor': (themeDark ? '#252323' : 'white'),
@@ -7,42 +7,33 @@
     }"
 >
   <div class="header_left" *ngSwitchCase="true">
-    <img src="../../../assets/images/dark/logo-edu.svg" alt="Logo TraktoEdu" />
+    <img [src]="icons.logo.dark" alt="Logo TraktoEdu" />
   </div>
   <div class="header_left" *ngSwitchCase="false">
-    <img
-      src="../../../assets/images/light/logo-edu-light.svg"
-      alt="Logo TraktoEdu"
-    />
+    <img [src]="icons.logo.light" alt="Logo TraktoEdu" />
     <button
       class="course_button header_button_logout"
       type="button"
       routerLink="/home"
     >
-      <img src="../../../assets/images/light/logout.png" alt="icon logout" />
+      <img [src]="icons.logout" alt="icon logout" />
       <span class="button_text">Trocar de ambiente</span>
     </button>
   </div>
   <div class="header_right" *ngSwitchCase="true">
     <div class="img_group">
-      <img
-        src="../../../assets/images/dark/icon-calendar.png"
-        alt="iconcalendar"
-      />
+      <img [src]="icons.calendar" alt="icon calendar" />
       <span>{{ transformDate() }}</span>
     </div>
-    <img src="../../../assets/images/dark/line.png" alt="line" />
-    <img
-      src="../../../assets/images/dark/icon-notification.png"
-      alt="icon-notification"
-    />
-    <img src="../../../assets/images/dark/line.png" alt="line" />
+    <img [src]="icons.line" alt="line" />
+    <img [src]="icons.bell" alt="icon-notification" />
+    <img [src]="icons.line" alt="line" />
     <div class="img_group">
-      <img src="../../../assets/images/dark/avatar.png" alt="avatar user" />
-      <img src="../../../assets/images/dark/icon-arrow.png" alt="icon arrow" />
+      <img [src]="icons.avatar" alt="avatar user" />
+      <img [src]="icons.arrow" alt="icon arrow" />
     </div>
   </div>
   <div class="header_right" *ngSwitchCase="false">
-    <img src="../../../assets/images/light/right.png" alt="nav-bar-right" />
+    <img [src]="icons.group" alt="nav-bar-right" />
   </div>
 </header>

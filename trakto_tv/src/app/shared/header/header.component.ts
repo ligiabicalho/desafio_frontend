@@ -1,5 +1,6 @@
 import { formatDate } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { icons } from 'src/app/shared/header/icons';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() themeDark = true;
+  icons = icons;
 
   transformDate() {
     const date = new Date().toLocaleDateString();

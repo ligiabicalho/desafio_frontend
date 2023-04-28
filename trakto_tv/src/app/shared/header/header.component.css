@@ -1,12 +1,8 @@
-.header__traktoedu {
-  align-items: center;
-  background: white;
-  display: flex;
-  flex-direction: row;
+.header__bar {
+  background: var(--bg-neutral-white);
   height: 76px;
-  justify-content: space-between;
   left: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 1920px;
 }
@@ -47,7 +43,9 @@ button:hover {
   gap: 32px;
   height: 40px;
   justify-content: center;
-  margin-right: 64px;
+  position: absolute;
+  right: 64px;
+  top: 21px;
 }
 
 .img_group {
