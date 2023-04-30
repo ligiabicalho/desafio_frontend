@@ -1,17 +1,15 @@
 <div class="viewAll_container"></div>
 <app-header [mode]="'light'"></app-header>
 <div class="viewAll_content">
-  <div class="viewAll_grid_items">
-    <hgroup class="grid_title">
-      <h3>Material didático</h3>
-      <p>Acesse suas últimas apresentações de aula.</p>
-    </hgroup>
-    <div class="grid_items">
-      <app-item-render
-        *ngFor="let doc of allDocs"
-        id="{{ doc.id }}"
-        [doc]="doc"
-      ></app-item-render>
-    </div>
+  <hgroup class="grid_title">
+    <h3>Material didático</h3>
+    <p>Acesse suas últimas apresentações de aula.</p>
+  </hgroup>
+  <div class="grid_items">
+    <app-item-render
+      *ngFor="let doc of allDocs"
+      id="{{ doc.id }}"
+      [doc]="doc"
+    ></app-item-render>
   </div>
 </div>
