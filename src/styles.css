@@ -57,21 +57,21 @@
 
   --yt-rose-light3: #f6b5ff;
 
-  --medium-title-SM: normal , 500 , 20px , roboto , sans-serif;
+  --medium-title-SM: normal 500 20px roboto , sans-serif;
 
-  --bold-title-MD: normal , 700 , 24px , roboto , sans-serif;
+  --bold-title-MD: normal 700 24px roboto , sans-serif;
 
-  --regular-title-LG: normal , 400 , 32px , roboto , sans-serif;
+  --regular-title-LG: normal 400 32px roboto , sans-serif;
 
-  --regular-body-LG: normal , 400 , 16px , roboto , sans-serif;
+  --regular-body-MD: normal 400 14px roboto , sans-serif;
 
-  --regular-body-MD: normal , 400 , 18px , roboto , sans-serif;
+  --regular-body-LG: normal 400 16px roboto , sans-serif;
 
-  --medium-body-LG: normal , 500 , 16px , roboto , sans-serif;
+  --medium-body-LG: normal 500 16px roboto , sans-serif;
 
   /* Legendas */
 
-  --medium-body-XLG: normal , 600 , 18px , roboto , sans-serif;
+  --medium-body-XLG: normal 600 18px roboto , sans-serif;
 
 }
 

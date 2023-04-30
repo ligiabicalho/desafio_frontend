@@ -52,20 +52,23 @@
 }
 
 .grid_title {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
-  margin: 0;
+  padding: 0;
 }
 
 .grid_title h3 {
-  color: #354564;
-  font-size: 24px;
-  font-weight: 700;
+  color: var(--neutral-dark);
+  font: var(--bold-title-MD);
+  margin: 0;
 }
 
 .grid_title p {
-  color: #7183a6;
-  font-size: 16px;
-  font-weight: 400;
+  color: var(--neutral-cloudy);
+  font: var(--regular-body-LG);
+  margin: 0;
 }
 
 .docs {
@@ -86,7 +89,7 @@
   width: 1720px;
 }
 
-.grid_items {
+.grid_items_content {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
