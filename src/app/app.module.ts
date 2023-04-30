@@ -6,8 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { CourseModule } from './pages/course/course.module';
+import { DesignModule } from './pages/design/design.module';
 import { HomeModule } from './pages/home/home.module';
 import { LoginModule } from './pages/login/login.module';
+import { QuizModule } from './pages/quiz/quiz.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +21,8 @@ import { LoginModule } from './pages/login/login.module';
     HomeModule,
     CourseModule,
     HttpClientModule,
+    QuizModule,
+    DesignModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

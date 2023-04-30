@@ -2,49 +2,47 @@
 .banner {
   background: radial-gradient(51.99% 51.99% at 64.17% 37.22%, rgba(85, 230, 186, 0.639) 0%, rgba(193, 229, 255, 0) 68.67%) , radial-gradient(109.13% 109.13% at 77.27% -19.92%, rgba(85, 125, 230, 0.261) 0%, rgba(2, 39, 66, 0) 69.98%) , radial-gradient(46.04% 46.04% at 26.85% 43.18%, rgba(255, 230, 0, 0.5) 0%, rgba(103, 191, 255, 0) 69.98%) , linear-gradient(180deg, #16984c 0%, #16b357 100%);
   display: flex;
+  flex: none;
+  flex-grow: 0;
   height: 584px;
-  left: 0;
-  top: 0;
+  order: 0;
   width: 1792px;
 }
 
-.banner_content {
+.banner_background {
   background: url('src/assets/images/banner/background-course.png');
   width: 100%;
 }
 
 .banner_text {
   align-items: flex-start;
-  align-self: stretch;
-  color: white;
+  color: var(--neutral-white);
   display: flex;
   flex-direction: column;
+  font-style: normal;
   gap: 16px;
   left: 152px;
   padding: 0;
   position: absolute;
   top: 155px;
   width: 774px;
-
 }
 
 .banner_text h1 {
+  align-self: stretch;
+  flex: none;
   font-family: Poppins , sans-serif;
   font-size: 72px;
-  font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  order: 0;
+  margin: 0;
 }
 
 .banner_text p {
-  font-family: Roboto , sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
+  font: var(--regular-title-LG);
   line-height: 38px;
+  margin: 0;
   opacity: 0.9;
-  order: 1;
 }
 
 .banner_img {
@@ -54,9 +52,16 @@
 }
 
 .banner_person_name {
+  color: var(--brand-yellow);
+  font-family: Funkey Monkey , sans-serif;
+  font-size: 70.85px;
+  font-style: normal;
+  font-weight: 400;
   left: 855px;
+  line-height: 82px;
   position: absolute;
   top: 331px;
+  transform: rotate(-8.42deg);
 }
 
 .banner_person_arrow {

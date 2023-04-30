@@ -29,7 +29,7 @@ export class HomeComponent {
     {
       name: 'Youtube',
       bar: 'bar-yt.png',
-      rota: '/youtube',
+      rota: 'https://www.youtube.com/@Trakto',
       image: 'module-youtube.png',
     },
   ];

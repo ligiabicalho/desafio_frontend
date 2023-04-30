@@ -25,12 +25,12 @@ export interface Document {
 export interface gridTheme {
   title: string;
   description: string;
+  type: string;
   videos?: string;
   docs?: Document[];
   viewMore: {
     text: string;
     url: string;
     icon?: string;
-    color: string;
   };
 }

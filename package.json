@@ -1,16 +1,18 @@
 {
   "name": "trakto-tv",
   "version": "0.0.0",
-  "homepage": "https://ligiabicalho.github.io/desafio_frontend/",
+  "homepage": "https://ligiabicalho.github.io/desafio_frontend",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^15.2.0",
     "@angular/common": "^15.2.0",
@@ -20,8 +22,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
-    "bootstrap": "^5.2.3",
-    "ng-bootstrap": "^1.6.3",
+    "gh-pages": "^5.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
@@ -33,12 +34,13 @@
     "@angular-eslint/eslint-plugin-template": "15.2.1",
     "@angular-eslint/schematics": "15.2.1",
     "@angular-eslint/template-parser": "15.2.1",
-    "@angular/cli": "~15.2.6",
+    "@angular/cli": "^15.2.7",
     "@angular/compiler-cli": "^15.2.0",
     "@types/bootstrap": "^5.2.6",
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
+    "angular-cli-ghpages": "^1.0.5",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",

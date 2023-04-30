@@ -1,10 +1,22 @@
-.header__bar {
-  background: var(--bg-neutral-white);
+.header__content {
+  align-items: center;
+  display: flex;
   height: 76px;
   left: 0;
   position: fixed;
   top: 0;
   width: 1920px;
+  z-index: 999;
+}
+
+.dark {
+  background: var(--hbg-dark);
+  color: var(--neutral-light);
+}
+
+.light {
+  background: var(--neutral-white);
+  color: var(--neutral-cloudy);
 }
 
 .header_left {
@@ -15,16 +27,18 @@
 }
 
 .header_button_logout {
-  border: 1px solid #7183a6;
-  color: #7183a6;
-  font-size: 20px;
-  gap: 8px;
+  border: 1px solid var(--neutral-cloudy);
   left: 264px;
-  line-height: 23px;
   position: absolute;
   text-decoration: none;
   top: 10px;
   transition: all 0.3s ease-in-out;
+}
+
+.button_text {
+  color: var(--neutral-cloudy);
+  font: var(--medium-title-SM);
+  line-height: 23px;
 }
 
 button:hover {

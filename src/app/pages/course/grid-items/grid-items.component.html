@@ -1,45 +1,33 @@
-<section class="course_grid_row">
-  <div>
-    <div class="course_grid_row_left">
-      <div class="grid_header">
-        <p class="period">Semana 24/04 até 29/04</p>
-        <img
-          src="../../../../assets/images/course/arrow-left.svg"
-          alt="arrow left"
-        />
-        <img
-          src="../../../../assets/images/course/arrow-right.png"
-          alt="arrow right"
-        />
-      </div>
-      <hgroup class="grid_title">
-        <h3>{{ theme.title }}</h3>
-        <p>{{ theme.description }}</p>
-      </hgroup>
+<section class="grid_items_container">
+  <div class="grid_header_left">
+    <div class="grid_scroll_period">
+      <p class="period">Semana 24/04 até 29/04</p>
+      <img [src]="icons.arrow_left" alt="arrow left" />
+      <img [src]="icons.arrow_right" alt="arrow right" />
     </div>
-    <button
-      class="course_button course_grid_row_right"
-      [ngClass]="theme.viewMore.color"
-      (click)="reDirect()"
-    >
-      <img
-        *ngIf="theme.viewMore.color === 'red'"
-        src="../../../../assets/images/course/icon-video.png"
-      />
-      {{ theme.viewMore.text }}
-    </button>
+
+    <hgroup class="grid_title">
+      <h3>{{ theme.title }}</h3>
+      <p>{{ theme.description }}</p>
+    </hgroup>
   </div>
-  <div class="grid_items">
+
+  <button
+    class="grid_header_right button"
+    [ngClass]="theme.type"
+    (click)="reDirect()"
+  >
+    <img *ngIf="theme.type === 'yt'" [src]="icons.ivideo" />
+    {{ theme.viewMore.text }}
+  </button>
+
+  <div class="grid_items_content">
     <app-item-render
       *ngFor="let doc of theme.docs"
       id="{{ doc.id }}"
       [doc]="doc"
     >
     </app-item-render>
-    <img
-      class="grid_videos"
-      *ngIf="theme.videos"
-      src="../../../../../assets/images/course/videos.png"
-    />
+    <img class="grid_videos" *ngIf="theme.videos" [src]="icons.videos" />
   </div>
 </section>

@@ -1,84 +1,85 @@
-.course_grid_row {
-  background: white;
+.grid_items_container {
+  background: var(--neutral-white);
   border-radius: 8px;
+  display: flex;
   flex: none;
-  flex-grow: 0;
+  flex-flow: column wrap;
   height: 519px;
-  order: 1;
+  margin-top: 48px;
+  position: relative;
   width: 1792px;
 }
 
-.course_grid_row_left {
+
+.grid_header_left {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   gap: 16px;
   left: 72px;
-  margin-top: 56px;
   position: absolute;
+  top: 56px;
   width: 645px;
 }
 
-.grid_header {
+.grid_header_right {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 72px;
+  top: 56px;
+}
+
+.grid_scroll_period {
   align-items: center;
   display: flex;
   flex-direction: row;
   gap: 8px;
   justify-content: center;
   padding: 0;
-
 }
 
 .period {
-  background: #e4ebfb;
+  background: var(--neutral-light);
   border-radius: 500px;
-  color: #7183a6;
-  font-family: Roboto , sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+  color: var(--neutral-cloudy);
+  font: var(--medium-body-LG);
   line-height: 19px;
   margin: auto;
   padding: 4px 8px;
   text-align: center;
-
 }
 
-.grid_title, h3, p {
+.grid_title {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
+  padding: 0;
+}
+
+.grid_title h3 {
+  color: var(--neutral-dark);
+  font: var(--bold-title-MD);
   margin: 0;
 }
 
-.grid_title, h3 {
-  color: #354564;
-  font-size: 24px;
-  font-weight: 700;
+.grid_title p {
+  color: var(--neutral-cloudy);
+  font: var(--regular-body-LG);
+  margin: 0;
 }
 
-.grid_title, p {
-  color: #7183a6;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.course_grid_row_right {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  left: 1540px;
-  margin-top: 56px;
-  position: absolute;
-}
-
-.button_blue {
+.docs {
   border: 1px solid #4743ff;
   color: #4743ff;
 }
 
-.button_red {
+.yt {
   border: 1px solid #ff0100;
   color: #ff0100;
+  gap: 8px;
 }
 
 .grid_videos {
@@ -88,7 +89,7 @@
   width: 1720px;
 }
 
-.grid_items {
+.grid_items_content {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
