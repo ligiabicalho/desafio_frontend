@@ -35,15 +35,14 @@
   font-size: 72px;
   font-weight: 700;
   line-height: 130%;
-  order: 0;
+  margin: 0;
 }
 
 .banner_text p {
-  font-size: 32px;
-  font-weight: 400;
+  font: var(--regular-title-LG);
   line-height: 38px;
+  margin: 0;
   opacity: 0.9;
-  order: 1;
 }
 
 .banner_img {
