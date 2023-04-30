@@ -1,3 +1,9 @@
+.conteiner {
+  height: 2442px;
+  position: relative;
+  width: 1920px;
+}
+
 .course_content {
   height: 1672px;
   left: 64px;
@@ -6,3 +12,4 @@
   top: 108px;
   width: 1792px;
 }
+
