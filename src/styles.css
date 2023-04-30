@@ -19,7 +19,7 @@
 
   --brand-yellow-light: yellow-light;
 
-  --brand-yellow: yellow;
+  --brand-yellow: #ffc13d;
 
   --md-blue: #4173cd;
 
@@ -57,6 +57,29 @@
 
   --yt-rose-light3: #f6b5ff;
 
+  --medium-title-SM: normal , 500 , 20px , roboto , sans-serif;
+
+  --bold-title-MD: normal , 700 , 24px , roboto , sans-serif;
+
+  --regular-title-LG: normal , 400 , 32px , roboto , sans-serif;
+
+  --regular-body-LG: normal , 400 , 16px , roboto , sans-serif;
+
+  --regular-body-MD: normal , 400 , 18px , roboto , sans-serif;
+
+  --medium-body-LG: normal , 500 , 16px , roboto , sans-serif;
+
+  /* Legendas */
+
+  --medium-body-XLG: normal , 600 , 18px , roboto , sans-serif;
+
+}
+
+@font-face {
+  font-family: funky monkey;
+  font-style: normal;
+  font-weight: 400;
+  src: url('src/assets/fonts/FunkyMonkey.ttf') format('ttf') , url('https://fonts.cdnfonts.com/s/94343/Funky Monkey.woff') format('woff');
 }
 
 * {
@@ -66,21 +89,19 @@
 body {
   background: var(--bg-light-blue);
   font-family: Roboto , sans-serif;
-  height: 1080px;
+  margin: auto;
   position: relative;
-  width: 1920px;
 }
 
-.course_button {
+.button {
   align-items: center;
-  background: white;
+  background: var(--neutral-white);
   border: 1px solid grey;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
-  font-family: Roboto , sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font: var(--medium-body-LG);
+  height: 52px;
   justify-content: center;
   padding: 16px 24px;
 }

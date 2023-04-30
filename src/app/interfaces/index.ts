@@ -11,3 +11,18 @@ export interface ModulesEdu {
   rota: string;
   image: string;
 }
+
+export interface bannerInputs {
+  src: {
+    background: string;
+    person: string;
+    name: string;
+    arrow: string;
+  };
+  alt: {
+    background?: string;
+    person: string;
+    name: string;
+    arrow: string;
+  };
+}

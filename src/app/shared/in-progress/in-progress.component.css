@@ -1,78 +1,10 @@
 .inprogress_container {
-  display: table-row-group;
   gap: 48px;
   left: 64px;
   padding: 0;
   position: absolute;
   top: 108px;
   width: 1792px;
-}
-
-/* stylelint-disable max-line-length */
-.banner {
-  background: radial-gradient(51.99% 51.99% at 64.17% 37.22%, rgba(85, 230, 186, 0.639) 0%, rgba(193, 229, 255, 0) 68.67%) , radial-gradient(109.13% 109.13% at 77.27% -19.92%, rgba(85, 125, 230, 0.261) 0%, rgba(2, 39, 66, 0) 69.98%) , radial-gradient(46.04% 46.04% at 26.85% 43.18%, rgba(255, 230, 0, 0.5) 0%, rgba(103, 191, 255, 0) 69.98%) , linear-gradient(180deg, #16984c 0%, #16b357 100%);
-  display: flex;
-  height: 584px;
-  width: 1792px;
-}
-
-.banner_content {
-  background: url('src/assets/images/banner/background-course.png');
-  width: 100%;
-}
-
-.banner_text {
-  align-items: flex-start;
-  align-self: stretch;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  left: 152px;
-  padding: 0;
-  position: absolute;
-  top: 155px;
-  width: 774px;
-
-}
-
-.banner_text h1 {
-  font-family: Poppins , sans-serif;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  order: 0;
-}
-
-.banner_text p {
-  font-family: Roboto , sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 38px;
-  opacity: 0.9;
-  order: 1;
-}
-
-.banner_img {
-  left: 1181px;
-  margin-bottom: 0;
-  position: absolute;
-}
-
-.banner_person_name {
-  color: var(--brand-yellow);
-  font-size: 20px;
-  left: 855px;
-  position: absolute;
-  top: 331px;
-}
-
-.banner_person_arrow {
-  left: 1075px;
-  position: absolute;
-  top: 410px;
 }
 
 .course_grid_row {
@@ -95,13 +27,13 @@
   width: 645px;
 }
 
-.grid_title, h3 {
+.grid_title > h3 {
   color: var(--neutral-dark);
   font-size: 24px;
   font-weight: 700;
 }
 
-.grid_title, p {
+.grid_title > p {
   color: var(--neutral-cloudy);
   font-size: 16px;
   font-weight: 400;

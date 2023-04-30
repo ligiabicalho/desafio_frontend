@@ -1,23 +1,16 @@
 <section class="banner">
-  <div class="banner_content">
+  <div class="banner_background">
     <hgroup class="banner_text">
       <h1>Conheça a jornada do Trakto Edu</h1>
       <p>O design como ferramenta educadora.</p>
     </hgroup>
+    <img class="banner_img" [src]="imgs.person" [alt]="alt.person" />
     <img
-      class="banner_img"
-      src="../../../../assets/images/banner/person.png"
-      alt="Foto do Tiago Mochileiro"
-    />
-    <img
+      *ngIf="imgs.name"
       class="banner_person_name"
-      src="../../../../assets/images/banner/TiagoMochileiro.svg"
-      alt="Nome Tiago Mochileiro"
+      [src]="imgs.name"
+      [alt]="alt.name"
     />
-    <img
-      class="banner_person_arrow"
-      src="../../../../assets/images/banner/arrow.png"
-      alt="Nome Tiago Mochileiro"
-    />
+    <img class="banner_person_arrow" [src]="imgs.arrow" [alt]="alt.arrow" />
   </div>
 </section>

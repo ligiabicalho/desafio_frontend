@@ -1,10 +1,10 @@
-<div class="course_page">
-  <app-header [mode]="'light'"></app-header>
-  <div class="course_content">
-    <app-banner></app-banner>
-    <app-grid-items
-      *ngFor="let theme of gridThemes"
-      [theme]="theme"
-    ></app-grid-items>
-  </div>
+<app-header [mode]="'light'"></app-header>
+<div class="course_content">
+  <app-banner [style.order]="0"></app-banner>
+  <app-grid-items
+    *ngFor="let theme of gridThemes; index as i"
+    [theme]="theme"
+    [style.order]="i + 1"
+    [ngClass]="'grid-items'"
+  ></app-grid-items>
 </div>
