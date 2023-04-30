@@ -1,5 +1,5 @@
 .grid_items_container {
-  background: white;
+  background: var(--neutral-white);
   border-radius: 8px;
   display: flex;
   flex: none;
