@@ -101,6 +101,7 @@ body {
   display: flex;
   flex-direction: row;
   font: var(--medium-body-LG);
+  gap: 8px;
   height: 52px;
   justify-content: center;
   padding: 16px 24px;
