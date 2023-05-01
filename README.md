@@ -71,9 +71,9 @@ Para mais detalhes das versões mais atuais, consulte o guia de configuração d
 - Faça um clone do projeto  
   `git clone git@github.com:ligiabicalho/desafio_frontend.git`
 
-- Entre no diretório `trakto_tv` e instale as dependências:
+- Entre no diretório clonado `desafio_frontend` e instale as dependências:
 
-  `cd desafio_frontend/trakto_tv`  
+  `cd desafio_frontend
   `npm install`
 
 - Inicie o servidor  
